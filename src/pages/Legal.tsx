@@ -1,8 +1,14 @@
 import React from "react";
+import { SEO } from "@/components/SEO";
 
 export function Legal() {
   return (
     <div className="max-w-3xl mx-auto space-y-8 bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+      <SEO 
+        title="Legal & Disclaimer" 
+        description="Important legal information, terms, and conditions for using the Greenhouse estimation tools." 
+        canonicalUrl="https://greenhouse.ruralutilitycost.com/legal" 
+      />
       <h1 className="text-3xl font-bold tracking-tight text-slate-900 border-b border-slate-100 pb-4">
         Legal & Disclaimer
       </h1>

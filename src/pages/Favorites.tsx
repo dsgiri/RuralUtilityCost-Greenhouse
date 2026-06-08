@@ -4,6 +4,7 @@ import { TOOLS } from "@/data";
 import { ToolCard } from "@/components/ui/ToolCard";
 import { useFavorites } from "@/hooks/useFavorites";
 import { Settings2 } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 export function Favorites() {
   const { favorites, toggleFavorite, isFavorite } = useFavorites();
@@ -12,6 +13,11 @@ export function Favorites() {
 
   return (
     <div className="space-y-8">
+      <SEO 
+        title="Favorite Tools" 
+        description="Access your saved greenhouse planning and economics tools." 
+        canonicalUrl="https://greenhouse.ruralutilitycost.com/favorites" 
+      />
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">Favorite Tools</h1>
         <p className="text-slate-600">Quick access to your saved calculators and estimators.</p>

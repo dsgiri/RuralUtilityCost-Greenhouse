@@ -1,6 +1,7 @@
 import React from "react";
 import { GitCompare } from "lucide-react";
 import { useCalculationHistory } from "@/context/CalculationHistoryContext";
+import { SEO } from "@/components/SEO";
 
 type Scenario = {
   name: string;
@@ -43,6 +44,11 @@ export function ScenarioCompare() {
 
   return (
     <div className="max-w-6xl mx-auto space-y-8">
+      <SEO 
+        title="Greenhouse Scenario Comparison Grid" 
+        description="Compare capital intensity, margins, and payback of different greenhouse setups." 
+        canonicalUrl="https://greenhouse.ruralutilitycost.com/compare" 
+      />
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">Scenario Comparison Grid</h1>
         <p className="text-slate-600">Compare capital intensity, margins, and payback of different setups.</p>

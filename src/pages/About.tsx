@@ -1,8 +1,15 @@
 import React from "react";
+import { SEO } from "@/components/SEO";
+import { AdContainer } from "@/components/AdContainer";
 
 export function About() {
   return (
     <div className="max-w-3xl mx-auto space-y-8 bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+      <SEO 
+        title="About Greenhouse" 
+        description="Learn more about Greenhouse, the controlled-environment agriculture economics and planning hub." 
+        canonicalUrl="https://greenhouse.ruralutilitycost.com/about" 
+      />
       <h1 className="text-3xl font-bold tracking-tight text-slate-900 border-b border-slate-100 pb-4">
         About Greenhouse
       </h1>
@@ -13,6 +20,9 @@ export function About() {
         <p>
           We help greenhouse growers, numerical farm managers, and CEA planners estimate costs, profit, energy usage, ROI, and payback periods for controlled-environment agriculture and greenhouse systems.
         </p>
+        
+        <AdContainer slotId="IN_CONTENT_SLOT_ID" className="my-8" />
+        
         <p>
           The goal of this platform is to help users make practical investment and operating decisions with clear, data-driven tools that are fast and easy to use. Whether you are planning a small hoop house or a massive glass greenhouse facility, understanding your startup costs, heating requirements, and crop profitability is essential.
         </p>

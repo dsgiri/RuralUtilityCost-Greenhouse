@@ -2,12 +2,18 @@ import React from "react";
 import { TOOLS } from "@/data";
 import { ToolCard } from "@/components/ui/ToolCard";
 import { useFavorites } from "@/hooks/useFavorites";
+import { SEO } from "@/components/SEO";
 
 export function Home() {
   const { favorites, toggleFavorite, isFavorite } = useFavorites();
 
   return (
     <div className="space-y-12">
+      <SEO 
+        title="Greenhouse Economics & Planning" 
+        description="Make evidence-based decisions for setup costs, heating expenses, crop profitability, and return on investment in controlled-environment agriculture." 
+        canonicalUrl="https://greenhouse.ruralutilitycost.com/" 
+      />
       <section className="text-center max-w-3xl mx-auto pt-8 pb-4">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">
           Greenhouse Economics & Planning

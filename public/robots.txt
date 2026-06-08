@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://greenhouse.ruralutilitycost.com/sitemap.xml

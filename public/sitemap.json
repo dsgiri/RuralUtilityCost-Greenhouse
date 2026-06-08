@@ -1,0 +1,34 @@
+{
+  "urlset": [
+    {
+      "url": "https://greenhouse.ruralutilitycost.com/",
+      "changefreq": "weekly",
+      "priority": 1.0
+    },
+    {
+      "url": "https://greenhouse.ruralutilitycost.com/estimate",
+      "changefreq": "monthly",
+      "priority": 0.8
+    },
+    {
+      "url": "https://greenhouse.ruralutilitycost.com/heating",
+      "changefreq": "monthly",
+      "priority": 0.8
+    },
+    {
+      "url": "https://greenhouse.ruralutilitycost.com/crops",
+      "changefreq": "monthly",
+      "priority": 0.8
+    },
+    {
+      "url": "https://greenhouse.ruralutilitycost.com/roi",
+      "changefreq": "monthly",
+      "priority": 0.8
+    },
+    {
+      "url": "https://greenhouse.ruralutilitycost.com/compare",
+      "changefreq": "monthly",
+      "priority": 0.8
+    }
+  ]
+}

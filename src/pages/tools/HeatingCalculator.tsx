@@ -2,6 +2,7 @@ import React from "react";
 import { Flame, Info } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { useCalculationHistory } from "@/context/CalculationHistoryContext";
+import { SEO } from "@/components/SEO";
 
 export function HeatingCalculator() {
   const [area, setArea] = useCalculationHistory<number>("heatingCalc", "area", 3000);
@@ -52,6 +53,11 @@ export function HeatingCalculator() {
 
   return (
     <div className="max-w-6xl mx-auto space-y-8">
+      <SEO 
+        title="Greenhouse Heating Cost Calculator" 
+        description="Forecast peak heating loads and estimate monthly fuel expenses for your greenhouse." 
+        canonicalUrl="https://greenhouse.ruralutilitycost.com/heating" 
+      />
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">Heating Cost Calculator</h1>
         <p className="text-slate-600">Forecast peak heating loads and estimate monthly fuel expenses.</p>

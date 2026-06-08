@@ -2,6 +2,7 @@ import React from "react";
 import { Leaf, DollarSign } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import { useCalculationHistory } from "@/context/CalculationHistoryContext";
+import { SEO } from "@/components/SEO";
 
 type CropConfig = {
   id: string;
@@ -37,6 +38,11 @@ export function CropProfitability() {
 
   return (
     <div className="max-w-6xl mx-auto space-y-8">
+      <SEO 
+        title="Greenhouse Crop Profitability Calculator" 
+        description="Compare expected revenue and gross margin per square foot for different greenhouse crops." 
+        canonicalUrl="https://greenhouse.ruralutilitycost.com/crops" 
+      />
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">Crop Profitability Comparison</h1>
         <p className="text-slate-600">Compare expected revenue and gross margin per square foot.</p>

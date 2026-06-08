@@ -2,6 +2,7 @@ import React from "react";
 import { TrendingUp, RefreshCw } from "lucide-react";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { useCalculationHistory } from "@/context/CalculationHistoryContext";
+import { SEO } from "@/components/SEO";
 
 export function ROICalculator() {
   const [initialInvestment, setInitialInvestment] = useCalculationHistory<number>("roiCalc", "initialInvestment", 100000);
@@ -26,6 +27,11 @@ export function ROICalculator() {
 
   return (
     <div className="max-w-6xl mx-auto space-y-8">
+      <SEO 
+        title="Greenhouse ROI & Payback Calculator" 
+        description="Determine how long it takes to recover capital and estimate 5-year return on greenhouse investments." 
+        canonicalUrl="https://greenhouse.ruralutilitycost.com/roi" 
+      />
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">ROI & Payback Calculator</h1>
         <p className="text-slate-600">Determine how long it takes to recover capital and estimate 5-year return.</p>

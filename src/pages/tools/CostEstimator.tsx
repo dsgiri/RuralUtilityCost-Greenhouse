@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { GREENHOUSE_TYPES, GreenhouseType } from "@/types";
 import { Calculator, DollarSign, Sprout } from "lucide-react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from "recharts";
 import { useCalculationHistory } from "@/context/CalculationHistoryContext";
+import { SEO } from "@/components/SEO";
 
 const TYPE_BASE_COST_PSF: Record<GreenhouseType, number> = {
   glass: 35.0,
@@ -42,6 +43,11 @@ export function CostEstimator() {
 
   return (
     <div className="max-w-6xl mx-auto space-y-8">
+      <SEO 
+        title="Greenhouse Startup Cost Calculator" 
+        description="Estimate initial build and setup capital expenditures (CapEx) for your greenhouse operations." 
+        canonicalUrl="https://greenhouse.ruralutilitycost.com/estimate" 
+      />
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">Startup Cost Estimator</h1>
         <p className="text-slate-600">Estimate initial build and setup capital expenditures (CapEx).</p>
